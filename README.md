@@ -1,7 +1,7 @@
-# Sarpras SMKN 1 Cibinong — Ionic React + Tailwind + NestJS (Capacitor Ready)
+# E-Sarpras — Ionic React + Tailwind + NestJS (Capacitor Ready)
 
-**Sarpras SMKN 1 Cibinong** adalah aplikasi **Sarana dan Prasarana Sekolah** berbasis **Ionic React** yang dapat dijalankan di Android, iOS, dan Web dari satu codebase.  
-Aplikasi ini mendukung proses seperti **permintaan barang, peminjaman fasilitas, inventarisasi, hingga pelaporan kerusakan**, dengan akses berdasarkan **role pengguna** (Siswa, Guru, dan Admin Sarpras).
+**E-Sarpras** adalah aplikasi **Manajemen Sarana dan Prasarana Sekolah** berbasis **Ionic React** yang dapat dijalankan di Android, iOS, dan Web dari satu codebase.  
+Aplikasi ini mendukung proses seperti **permintaan barang, peminjaman fasilitas, inventarisasi, hingga pelaporan kerusakan**, dengan akses berdasarkan **role pengguna** (Siswa, Guru, TU, Wakasek, dan Admin Sarpras).
 
 ---
 
@@ -18,43 +18,42 @@ Aplikasi ini mendukung proses seperti **permintaan barang, peminjaman fasilitas,
 ---
 
 ## 📁 Struktur Folder
-<pre lang="markdown"> 
+<pre lang="markdown">
 src/
-├── components/ # Kumpulan komponen UI per role
+├── components/   # Kumpulan komponen UI per role
 │   ├── Admin/
 │   ├── Guru/
 │   └── Siswa/
-│   
 │
-├── pages/ # Halaman utama berdasarkan role
+├── pages/        # Halaman utama berdasarkan role
 │   ├── Admin/
 │   ├── Guru/
 │   ├── Siswa/
-│   └── Auth/ # Login, Register, Role Selection
+│   └── Auth/     # Login, Register, Role Selection
 │
-├── layouts/ # Struktur layout per role (AdminLayout, UserLayout, dsb)
+├── layouts/      # Struktur layout per role (AdminLayout, UserLayout, dll)
 │
-├── services/ # Komunikasi API ke backend NestJS
+├── services/     # Komunikasi API ke backend NestJS
 │   ├── api.ts
 │   ├── authService.ts
 │   └── sarprasService.ts
 │
-├── hooks/ # Custom React hooks
-├── theme/ # Tailwind atau Ionic theme vars
-├── routes.tsx # Routing aplikasi berdasarkan role
-├── App.tsx # Entry point utama
-├── main.tsx # Bootstrap aplikasi
+├── hooks/        # Custom React hooks
+├── theme/        # Tailwind atau Ionic theme vars
+├── routes.tsx    # Routing aplikasi berdasarkan role
+├── App.tsx       # Entry point utama
+├── main.tsx      # Bootstrap aplikasi
 </pre>
 
 ---
 
 ## ✨ Fitur Utama
 
-- 🔒 Autentikasi berdasarkan role (Siswa, Guru, TU, Wakasek, Admin Sarpras)  
+- 🔒 Autentikasi multi-role (Siswa, Guru, TU, Wakasek, Admin Sarpras)  
 - 📦 Permintaan & Peminjaman Barang  
 - 📑 Inventarisasi Barang & Ruangan (KIB & KIR)  
 - 🚗 Peminjaman Kendaraan Sekolah  
-- 🏫 Pemakaian Fasilitas (Aula, Lapangan, Lab, dll)  
+- 🏫 Pemakaian Fasilitas (Aula, Lapangan, Laboratorium, dll)  
 - 🛠️ Pengaduan & Laporan Kerusakan Fasilitas  
 - 🔔 Notifikasi status pengajuan (diterima/ditolak/proses)  
 - 📱 Multi-platform (Web, Android, iOS)  
@@ -66,5 +65,5 @@ src/
 1. Clone repo ini:
 
 ```bash
-git clone https://github.com/kamu/sarpras-smkn1cibinong.git
-cd sarpras-smkn1cibinong
+git clone https://github.com/arkanss/e-sarpras.git
+cd e-sarpras
